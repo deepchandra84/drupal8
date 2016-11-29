@@ -1,0 +1,5 @@
+d8_training.node_add_page:
+  route_name: node.add_page
+  title: 'Add Node Please'
+  appears_on: 
+    - 'd8_trainning.node_list'

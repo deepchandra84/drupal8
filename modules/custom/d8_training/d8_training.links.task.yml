@@ -1,0 +1,9 @@
+d8_training.node_list_tab:
+  title: 'Node List'
+  route_name: d8_trainning.node_list
+  base_route: d8_trainning.node_list_tab
+  
+d8_trainning.node_route_tab:
+  title: 'Node Details'
+  route_name: d8_trainning.node_details
+  base_route: d8_trainning.node_list_tab

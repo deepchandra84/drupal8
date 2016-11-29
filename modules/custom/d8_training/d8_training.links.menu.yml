@@ -1,0 +1,5 @@
+d8_training.links_admin:
+  title: Node List Actions
+  description: Lets Test the Drupal 8 Menu
+  route_name: d8_trainning.node_details
+  parent: system.admin_config_development
