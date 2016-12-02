@@ -3,25 +3,39 @@ d8_trainning.node_list:
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
   requirements:
-    _permission: 'access content'
+    _permission: 'access d8 training'
 
 d8_trainning.node_details:
   path: '/list/node/details'
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::contentDetails'
   requirements:
-    _permission: 'access content'
+    _permission: 'access d8 training'
 
 d8_trainning.node_route:
   path: '/list/node/{node}'
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::loadNode'
   requirements:
-    _permission: 'access content'
+    _permission: 'access d8 training'
 
 d8_trainning.dynamic_route:
   path: '/dynamiclist/{entity_type}'
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::dynamicContent'
   requirements:
-    _permission: 'access content'
+    _query_siteid_check: 'TRUE'
+
+d8_trainning.training_form:
+  path: '/training_form'
+  defaults:
+    _form: 'Drupal\d8_training\Form\TrainingForm'
+  requirements:
+    _permission: 'access d8 training'
+
+d8_trainning.weather-config:
+  path: '/admin/weather-config'
+  defaults:
+    _form: 'Drupal\d8_training\Form\WeatherConfigForm'
+  requirements:
+    _permission: 'access d8 training'

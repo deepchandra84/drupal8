@@ -24,7 +24,8 @@
         ],
         "merge-plugin": {
             "include": [
-                "core/composer.json"
+                "core/composer.json",
+                "modules/custom/d8_training/composer.json"
             ],
             "recurse": false,
             "replace": false,

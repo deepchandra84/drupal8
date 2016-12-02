@@ -1,0 +1,18 @@
+services:
+  d8_training.query_siteid_check:
+    class: Drupal\d8_training\QueryAccessCheck
+    tags:
+      - { name: access_check, applies_to: _query_siteid_check }
+  d8_training.form_manager:
+    class: Drupal\d8_training\FormManager
+    arguments: ['@database']  
+  d8_training.console_demo:
+    class: Drupal\d8_training\ConsoleDemoService
+    arguments: ['@database']
+  d8_training.weather_forecaster:
+    class: Drupal\d8_training\OpenWeatherForecaster
+    arguments: ['@config.factory','@http_client']
+#  d8_training.event_manager:
+#    class: Drupal\d8_training\EventSubscriber\MyEventManager
+#    tags:
+#      - { name: event_subscriber }

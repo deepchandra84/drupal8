@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function d8_training_theme() {
+  return array(
+    'weather_widget' => array(
+      'variables' => array(
+        'weather_data' => NULL
+      )
+    )
+  );
+}

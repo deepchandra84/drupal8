@@ -1,0 +1,22 @@
+<?php
+/**
+ * Implementation of hook_schema(); defined the database schema to use for this module.
+ *
+ * @return array $schema
+ *         The array of drupal schema definition parameters.
+ */
+function d8_training_schema() {
+  $schema['d8_training_table'] = array(
+    'description' => t('The base table for D8 Training.'),
+    'fields' => array(
+      'd8_text' => array(
+        'description' => 'Text',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      )
+    )
+  );
+  return $schema;
+}

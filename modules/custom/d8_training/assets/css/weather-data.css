@@ -1,0 +1,18 @@
+.weather_report_wrapper {
+	padding: 5px;
+	border: 1px solid #666666;
+	color: #666666;
+	background: #CCCCCC;
+	display: none;
+}
+.weather_heading {
+	font-weight: bold; 
+	padding: 5px;	
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.weather_report_data {
+	padding: 5px;
+	border-top: 1px solid #666666;
+}
