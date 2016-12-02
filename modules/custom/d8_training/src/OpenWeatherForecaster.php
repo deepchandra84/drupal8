@@ -23,9 +23,9 @@ class OpenWeatherForecaster {
     $method = 'GET';
     $endPoint = 'http://api.openweathermap.org/data/2.5/weather?q=' . $city_name . '&appid=' . $api_key;
     //$options = array('query' => array('q' => $city_name, 'appid' => $api_key));
-    $resp = $this->http_client->request($method, $endPoint);
+    //$resp = $this->http_client->request($method, $endPoint);
     
-    $data = $resp->getBody()->getContents();
+    //$data = $resp->getBody()->getContents();
     
     return $data;
   }

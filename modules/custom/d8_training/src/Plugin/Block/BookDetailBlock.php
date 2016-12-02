@@ -56,11 +56,12 @@ class BookDetailBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $bookTitle = 'Test';
     $configuration = $this->getConfiguration('isbn');
-    $client = new Client(['base_uri' => 'https://www.googleapis.com/books/v1/']);
-    $fetcher = new Fetcher($client);
-    $book = $fetcher->forISBN($configuration['isbn']);
-    $bookTitle = $book->title;
+    //$client = new Client(['base_uri' => 'https://www.googleapis.com/books/v1/']);
+    //$fetcher = new Fetcher($client);
+    //$book = $fetcher->forISBN($configuration['isbn']);
+    //$bookTitle = $book->title;
     $build['book_detail_block_isbn']['#markup'] = '<p>' . $bookTitle . '</p>';
     return $build;
   }
